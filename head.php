@@ -85,7 +85,7 @@ if ($login['Emp_pos'] == "0") {
                     <li><a href="car_list.php">ข้อมูลรถลาก</a></li>
                     <li><a href="trailer_list.php">ข้อมูลเทรลเลอร์</a></li>
                     <li><a href="category_list.php">ข้อมูลประเภทสินค้า</a></li>
-                    <li><a href="customer_list">ข้อมูลลูกค้า</a></li>
+                    <li><a href="customer_list.php">ข้อมูลลูกค้า</a></li>
                 </ul>
             </li>
         </ul>

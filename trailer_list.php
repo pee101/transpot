@@ -60,7 +60,7 @@
                                                 <a class="btn btn-info" href="trailer_view.php?mode=edit&id=<?=$array['Tar_id']?>">
                                                     <i class="glyphicon glyphicon-edit"></i>
                                                 </a>
-                                                <a class="btn btn-danger" href="trailer_save?mode=delete&id=<?=$array['Tar_id']?>" onclick="return confirm('คุณต้องการลบข้อมูลนี่ ? ')">
+                                                <a class="btn btn-danger" href="trailer_save.php?mode=delete&id=<?=$array['Tar_id']?>" onclick="return confirm('คุณต้องการลบข้อมูลนี่ ? ')">
                                                     <i class="glyphicon glyphicon-trash"></i>
                                                 </a>
                                             </td>

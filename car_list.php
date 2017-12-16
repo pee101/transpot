@@ -27,7 +27,6 @@
                 </div><br>
                 <div class="row">
                     <div class="col-md-12">
-
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
@@ -57,7 +56,7 @@
                                                 <a class="btn btn-info" href="car_view.php?mode=edit&id=<?=$array['Car_id']?>">
                                                     <i class="glyphicon glyphicon-edit"></i>
                                                 </a>
-                                                <a class="btn btn-danger" href="car_save?mode=delete&id=<?=$array['Car_id']?>" onclick="return confirm('คุณต้องการลบข้อมูลนี่ ? ')">
+                                                <a class="btn btn-danger" href="car_save.php?mode=delete&id=<?=$array['Car_id']?>" onclick="return confirm('คุณต้องการลบข้อมูลนี่ ? ')">
                                                     <i class="glyphicon glyphicon-trash"></i>
                                                 </a>
                                             </td>

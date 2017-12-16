@@ -32,7 +32,7 @@ if ($_GET['mode'] == "") {
             <div class="box-content">
                 <div class="row">
                     <div class="col-md-12">
-                        <form class="form-horizontal"  action="employee_save"  id="myform" method="post">
+                        <form class="form-horizontal"  action="employee_save.php"  id="myform" method="post">
                             <div class="form-group">
                                 <label  class="col-sm-2 control-label">รหัสพนักงาน</label>
                                 <div class="col-sm-4">

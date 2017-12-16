@@ -13,7 +13,7 @@
             <div class="box-content row">
                 <div class="col-lg-7 col-md-12">
                     <!--<img src="img/logo.jpg" class="img-responsive" width="200">-->
-                    <h1>ยินดีต้องรับเข้าสู่ระบบ <br>
+                    <h1>ยินดีต้อนรับเข้าสู่ระบบ <br>
                         <small>คุณ <?=$login['Emp_name']?> ตำแหน่ง <?=$loginposition?></small>
                     </h1>
                 </div>

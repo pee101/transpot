@@ -56,7 +56,7 @@
                                                 <a class="btn btn-info" href="category_view.php?mode=edit&id=<?=$array['Cat_id']?>">
                                                     <i class="glyphicon glyphicon-edit"></i>
                                                 </a>
-                                                <a class="btn btn-danger" href="category_save?mode=delete&id=<?=$array['Cat_id']?>" onclick="return confirm('คุณต้องการลบข้อมูลนี่ ? ')">
+                                                <a class="btn btn-danger" href="category_save.php?mode=delete&id=<?=$array['Cat_id']?>" onclick="return confirm('คุณต้องการลบข้อมูลนี่ ? ')">
                                                     <i class="glyphicon glyphicon-trash"></i>
                                                 </a>
                                             </td>

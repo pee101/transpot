@@ -1,6 +1,5 @@
 <?php
 
-error_reporting( error_reporting() & ~E_NOTICE );
 $db_server = "localhost";
 $db_user = "root";
 $db_pass = "";
