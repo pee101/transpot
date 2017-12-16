@@ -101,7 +101,7 @@ if ($_GET['mode'] == "") {
                                                     $sel="";
                                                 }
                                             ?>
-                                            <option value="<?=$array_car['Car_id']?>" <?=$sel?>><?=$array_car['Car_brand']?> <?=$array_car['Car_color']?></option>
+                                            <option value="<?=$array_car['Car_id']?>" <?=$sel?>>ทะเบียน <?=$array_car['Car_id']?> <?=$array_car['Car_brand']?> สี <?=$array_car['Car_color']?></option>
                                             <?php } ?>
                                         </select>
                                 </div>

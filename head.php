@@ -38,6 +38,20 @@ if($_SESSION['ss_login'] != session_id() or $_SESSION['ss_emp_id']==NULL ){
 $sql_login = "select * from Employee where Emp_id='".$_SESSION['ss_emp_id']."'";
 $result_login = mysqli_query($connect, $sql_login);
 $login = mysqli_fetch_array($result_login);
+if($login['Emp_pos']=="0"){
+    $loginposition="เจ้าของบริษัท";
+}
+if ($login['Emp_pos'] == "0") {
+    $loginposition = "เจ้าของบริษัท";
+} elseif ($login['Emp_pos'] == "1") {
+    $loginposition = "ผู้ดูแลระบบ";
+} elseif ($login['Emp_pos'] == "2") {
+    $loginposition = "พนักงาน";
+} elseif ($login['Emp_pos'] == "3") {
+    $loginposition = "พนักงานขับรถ";
+} elseif ($login['Emp_pos'] == "4") {
+    $loginposition = "พนักงานโอเปอเรเตอร์";
+}
 ?>
 <div class="navbar navbar-default" role="navigation">
     <div class="navbar-inner">

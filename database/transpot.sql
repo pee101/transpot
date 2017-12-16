@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50714
 File Encoding         : 65001
 
-Date: 2017-12-16 15:59:28
+Date: 2017-12-16 16:23:10
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -91,6 +91,7 @@ CREATE TABLE `employee` (
 INSERT INTO `employee` VALUES ('EM00000001', '1219900450546', 'ภานุพงค์ สงคำศรี', '0', '0827416082', '0', 'admin', '1234', '');
 INSERT INTO `employee` VALUES ('EM00000002', '1537310165822', 'กิติชัย ให้ชนะ', '1', '0875681415', '1', 'webmaster', '11111', '');
 INSERT INTO `employee` VALUES ('EM00000003', '2312412412412', 'สมยศ ดวงดี', '0', '0834234142', '3', 'keaw', '1111', 'sbm-5464');
+INSERT INTO `employee` VALUES ('EM00000004', '8712391230123', 'ไพทูรณ์ การสาร', '0', '0812312312', '2', 'paitoon', '1111', '');
 
 -- ----------------------------
 -- Table structure for trailer
