@@ -31,6 +31,23 @@ if($_POST['mode']=="add"){
     echo "<script>alert('แก้ไขข้อมูลเรียบร้อย');</script>";
     echo "<META http-equiv='refresh' Content='0; URL=employee_list.php'> ";
 }elseif($_GET['mode']=="delete"){
+    if($_GET['id']==$_GET['login']){
+        echo "<script>alert('ไม่สามารถลบได้เนื้องจากกำลังเข้าสู่ระบบอยู่');</script>";
+        echo "<META http-equiv='refresh' Content='0; URL=employee_list.php'> ";
+        exit();
+    }
+    $sql_chk = "select * from Employee where Emp_id='".$_GET['id']."' ";
+    $query_chk = mysqli_query($connect, $sql_chk);
+    $array = mysqli_fetch_array($query_chk);
+    
+    $sql_ow = "select * from Employee where Emp_pos='1' ";
+    $query_ow = mysqli_query($connect, $sql_ow);
+    $numow = mysqli_num_rows($query_cc);
+    if($array['Emp_pos']=="1" and $numow<=1){
+        echo "<script>alert('ไม่สามารถลบได้ จะต้องมี admin 1 คนในระบบ');</script>";
+        echo "<META http-equiv='refresh' Content='0; URL=employee_list.php'> ";
+        exit();
+    }
     $sql = "delete from Employee  where Emp_id='" . $_GET['id'] . "'";
     $query = mysqli_query($connect, $sql);
     echo "<META http-equiv='refresh' Content='0; URL=employee_list.php'> ";
